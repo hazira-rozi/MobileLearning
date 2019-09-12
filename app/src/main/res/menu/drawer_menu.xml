@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+            android:id="@+id/homeGroup"
+            android:checkableBehavior="single">
+        <item
+                android:id="@+id/nav_home"
+                android:icon="@drawable/ic_home_black_24dp"
+                android:title="@string/menuHome" />
+    </group>
+    <group
+            android:id="@+id/menuDrawerGroup"
+            android:checkableBehavior="single">
+        <item
+                android:icon="@drawable/ic_book_black_24dp"
+                android:title="@string/menuDaftarMateri">
+            <menu>
+                <item
+                        android:id="@+id/nav_materi_1"
+                        android:icon="@drawable/ic_book_black_24dp"
+                        android:title="@string/menuPengolahKata" />
+                <item
+                        android:id="@+id/nav_materi_2"
+                        android:icon="@drawable/ic_book_black_24dp"
+                        android:title="@string/menuPengolahAngka" />
+                <item
+                        android:id="@+id/nav_materi_3"
+                        android:icon="@drawable/ic_book_black_24dp"
+                        android:title="@string/menuPresentasi" />
+            </menu>
+        </item>
+    </group>
+</menu>

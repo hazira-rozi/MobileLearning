@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Mobile Learning</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lipsum">  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus urna diam, malesuada eu quam id, finibus consectetur augue. Donec at risus nunc. Vivamus leo tortor, imperdiet vel facilisis a, tincidunt non libero. Maecenas arcu massa, rutrum varius elementum suscipit, elementum in turpis. Nulla tempus, nibh aliquam luctus efficitur, tortor est dictum magna, sit amet imperdiet lorem leo a arcu. Sed luctus ultricies ligula ut aliquet. Morbi ipsum magna, gravida eget consectetur vitae, molestie nec eros. Suspendisse potenti. Nullam purus nibh, egestas quis enim sed, congue rutrum metus. Sed et magna a sapien cursus semper.
+            \n \n Pellentesque ex magna, fermentum at ligula sed, pulvinar lacinia orci. Quisque sit amet mauris sit amet tellus fringilla luctus nec sit amet sem. Mauris tristique mauris eget nunc dignissim facilisis. Pellentesque maximus leo eu nibh gravida condimentum. Nunc at nisi erat. Integer congue dignissim aliquet. Quisque vulputate efficitur ex ac ultricies. Etiam vel libero turpis. Etiam venenatis metus a justo malesuada, ut feugiat magna pulvinar.
+            \n \n Quisque in fermentum dui, vitae tempus risus. Proin ut blandit lacus, vitae laoreet purus. Aliquam sed metus dapibus, semper dolor vel, dapibus nibh. Nullam ac nisl sit amet nisi faucibus rhoncus. Fusce volutpat euismod magna, in sagittis est. Quisque tincidunt elit quis elit scelerisque venenatis. Vivamus vel dui viverra, pretium mi at, convallis tellus. Sed vestibulum eu velit id egestas. Nulla pellentesque dignissim eros, sed varius eros ultricies a. Vivamus vel lobortis justo, non sagittis odio.
+            \n \n
+
+    </string>
+    //Materi
+    <string name="word_preface">
+        Salah satu kegiatan mengelola informasi digital adalah menulis/membuat/menyusun naskah digital menggunakan aplikasi pengolah kata. Pada media ini, digunakan perangkat lunak Microsoft Word 2013.
+    </string>
+
+    <string name="titleHome">Home</string>
+    <string name="titleAbout">About</string>
+    <string name="titleHelp">Help</string>
+    <string name="titleMore">More</string>
+    <string name="titleMateri1">Perangkat Lunak Pengolah Kata - Home</string>
+    <string name="titleMateri2">Perangkat Lunak Pengolah Angka</string>
+    <string name="titleMateri3">Perangkat Lunak Pengolah Angka</string>
+    <string name="titleMateriLangkah">Langkah Kerja</string>
+    <string name="titleMateriLatihan">Latihan</string>
+    <string name="titleMateriEvaluas">Evaluasi</string>
+    <string name="menuPengolahKata">Materi 1 - Pengolah Kata</string>
+    <string name="menuPengolahAngka">Materi 2 - Pengolah Angka</string>
+    <string name="menuPresentasi">Perangkat Lunak Presentasi</string>
+    <string name="menuDaftarMateri">Daftar Materi</string>
+    <string name="menuHome">Beranda</string>
+    <string name="buttonQuiz">Mulai Latihan</string>
+
+    //TableLayouts
+    <string name="tabHeaderFitur">Nama Fitur</string>
+    <string name="tabHeaderFungsi">Fungsi</string>
+
+    //
+    <string name="pageLayoutText">"Untuk mengatur tata letak dokumen, hal pertama yang perlu diketahui adalah orientasi halaman vertikal (portrait) atau horisontal (landscape). Mengatur orientasi halaman dapat dilakukan dengan cara sebagai berikut.
+            \n a. Pilih tab PAGE LAYOUT .
+            \n b. Klik Orientation.
+            \n c. Pilih Portrait atau Landscape untuk mengubah orientasi halaman.
+
+            \n Selain pengaturan orientasi, juga perlu mengetahui ukuran kertas dan margin yang akan digunakan untuk mencetak dokumen tersebut.
+            \n Margin merupakan garis pinggir yang memisahkan tepi kertas dan area pengetikan
+        "</string>
+    <string name="fontText">
+        Fitur untuk pengaturan font dalam perangkat lunak pengolah kata dikelompokkan jadi satu dalam
+        kelompok font. Kelompok tersebut memiliki berbagai pilihan untuk pemformatan font pada suatu
+        teks dokumen, misalnya mengatur jenis font, ukuran font, atau warna
+    </string>
+
+</resources>
