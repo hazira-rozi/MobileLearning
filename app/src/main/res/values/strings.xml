@@ -46,12 +46,20 @@
             \n c. Pilih Portrait atau Landscape untuk mengubah orientasi halaman.
 
             \n Selain pengaturan orientasi, juga perlu mengetahui ukuran kertas dan margin yang akan digunakan untuk mencetak dokumen tersebut.
-            \n Margin merupakan garis pinggir yang memisahkan tepi kertas dan area pengetikan
-        "</string>
+            \n Margin merupakan garis pinggir yang memisahkan tepi kertas dan area pengetikan"
+    </string>
     <string name="fontText">
         Fitur untuk pengaturan font dalam perangkat lunak pengolah kata dikelompokkan jadi satu dalam
         kelompok font. Kelompok tersebut memiliki berbagai pilihan untuk pemformatan font pada suatu
         teks dokumen, misalnya mengatur jenis font, ukuran font, atau warna
     </string>
+
+    <string name="app_name_with_index">Mobile Learning (%1$d/%2$d)</string>
+    <string name="info">Info</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+
+    <string name="pick_file">Pick file</string>
+    <string name="toast_pick_file_error">Unable to pick file. Check status of file manager.</string>
 
 </resources>

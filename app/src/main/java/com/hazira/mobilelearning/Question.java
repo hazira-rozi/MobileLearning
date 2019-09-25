@@ -4,150 +4,150 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 public class Question implements Parcelable {
-    public static final int QuizKD_1_1 =1;
-    public static final int QuizKD_1_2 =2;
-    public static final int QuizKD_1_3 =3;
-    public static final int QuizKD_1_4 =4;
+  public static final int QuizKD_1_1 =1;
+  public static final int QuizKD_1_2 =2;
+  public static final int QuizKD_1_3 =3;
+  public static final int QuizKD_1_4 =4;
 
 
 
-    private int id;
-    private String question;
-    private String option1;
-    private String option2;
-    private String option3;
-    private String option4;
-    private int answerNr;
-    private int quizKDID;
+  private int id;
+  private String question;
+  private String option1;
+  private String option2;
+  private String option3;
+  private String option4;
+  private int answerNr;
+  private int quizKDID;
 
-    public Question() {
+  public Question() {
 
-    }
+  }
 
-    public Question(String question, String option1, String option2, String option3, String option4,
-                    int answerNr, int quizKDID) {
-        this.question = question;
-        this.option1 = option1;
-        this.option2 = option2;
-        this.option3 = option3;
-        this.option4 = option4;
-        this.answerNr = answerNr;
-        this.quizKDID = quizKDID;
-    }
+  public Question(String question, String option1, String option2, String option3, String option4,
+                  int answerNr, int quizKDID) {
+    this.question = question;
+    this.option1 = option1;
+    this.option2 = option2;
+    this.option3 = option3;
+    this.option4 = option4;
+    this.answerNr = answerNr;
+    this.quizKDID = quizKDID;
+  }
 
-    protected Question(Parcel in) {
-        id = in.readInt();
-        question = in.readString();
-        option1 = in.readString();
-        option2 = in.readString();
-        option3 = in.readString();
-        option4 = in.readString();
-        answerNr = in.readInt();
-        quizKDID = in.readInt();
+  protected Question(Parcel in) {
+    id = in.readInt();
+    question = in.readString();
+    option1 = in.readString();
+    option2 = in.readString();
+    option3 = in.readString();
+    option4 = in.readString();
+    answerNr = in.readInt();
+    quizKDID = in.readInt();
+  }
+
+  @Override
+  public void writeToParcel(Parcel dest, int flags) {
+    dest.writeInt(id);
+    dest.writeString(question);
+    dest.writeString(option1);
+    dest.writeString(option2);
+    dest.writeString(option3);
+    dest.writeString(option4);
+    dest.writeInt(answerNr);
+    dest.writeInt(quizKDID);
+  }
+
+  @Override
+  public int describeContents() {
+    return 0;
+  }
+
+  public static final Creator<Question> CREATOR = new Creator<Question>() {
+    @Override
+    public Question createFromParcel(Parcel in) {
+      return new Question(in);
     }
 
     @Override
-    public void writeToParcel(Parcel dest, int flags) {
-        dest.writeInt(id);
-        dest.writeString(question);
-        dest.writeString(option1);
-        dest.writeString(option2);
-        dest.writeString(option3);
-        dest.writeString(option4);
-        dest.writeInt(answerNr);
-        dest.writeInt(quizKDID);
+    public Question[] newArray(int size) {
+      return new Question[size];
     }
+  };
 
-    @Override
-    public int describeContents() {
-        return 0;
-    }
+  public int getId() {
+    return id;
+  }
 
-    public static final Creator<Question> CREATOR = new Creator<Question>() {
-        @Override
-        public Question createFromParcel(Parcel in) {
-            return new Question(in);
-        }
+  public void setId(int id) {
+    this.id = id;
+  }
 
-        @Override
-        public Question[] newArray(int size) {
-            return new Question[size];
-        }
-    };
+  public String getQuestion() {
 
-    public int getId() {
-        return id;
-    }
+    return question;
+  }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+  public void setQuestion(String question) {
 
-    public String getQuestion() {
+    this.question = question;
+  }
 
-        return question;
-    }
+  public String getOption1() {
 
-    public void setQuestion(String question) {
+    return option1;
+  }
 
-        this.question = question;
-    }
+  public void setOption1(String option1) {
 
-    public String getOption1() {
+    this.option1 = option1;
+  }
 
-        return option1;
-    }
+  public String getOption2() {
 
-    public void setOption1(String option1) {
+    return option2;
+  }
 
-        this.option1 = option1;
-    }
+  public void setOption2(String option2) {
 
-    public String getOption2() {
+    this.option2 = option2;
+  }
 
-        return option2;
-    }
+  public String getOption3() {
 
-    public void setOption2(String option2) {
+    return option3;
+  }
 
-        this.option2 = option2;
-    }
+  public void setOption3(String option3) {
 
-    public String getOption3() {
+    this.option3 = option3;
+  }
 
-        return option3;
-    }
+  public String getOption4() {
 
-    public void setOption3(String option3) {
+    return option4;
+  }
 
-        this.option3 = option3;
-    }
+  public void setOption4(String option4) {
 
-    public String getOption4() {
+    this.option4 = option4;
+  }
 
-        return option4;
-    }
+  public int getAnswerNr() {
 
-    public void setOption4(String option4) {
+    return answerNr;
+  }
 
-        this.option4 = option4;
-    }
+  public void setAnswerNr(int answerNr) {
 
-    public int getAnswerNr() {
+    this.answerNr = answerNr;
+  }
 
-        return answerNr;
-    }
+  public int getQuizKDID() {
+    return quizKDID;
+  }
 
-    public void setAnswerNr(int answerNr) {
-
-        this.answerNr = answerNr;
-    }
-
-    public int getQuizKDID() {
-        return quizKDID;
-    }
-
-    public void setQuizKDID(int quizKDID) {
-        this.quizKDID = quizKDID;
-    }
+  public void setQuizKDID(int quizKDID) {
+    this.quizKDID = quizKDID;
+  }
 }

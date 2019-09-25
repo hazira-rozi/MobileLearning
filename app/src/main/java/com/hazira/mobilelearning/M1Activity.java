@@ -2,16 +2,24 @@ package com.hazira.mobilelearning;
 
 import android.content.Intent;
 import android.os.Bundle;
+
 import androidx.annotation.NonNull;
+
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 import androidx.fragment.app.Fragment;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.app.AlertDialog;
+
 
 public class M1Activity extends AppCompatActivity {
 
+    public static final String FRAGMENT_PDF_RENDERER_BASIC = "pdf_renderer_basic";
 
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -38,6 +46,7 @@ public class M1Activity extends AppCompatActivity {
 
 
         }
+
 
     }
 
@@ -76,13 +85,6 @@ public class M1Activity extends AppCompatActivity {
             };
 
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == android.R.id.home) {
-            finish();
-        }
-        return super.onOptionsItemSelected(item);
-    }
 
     @Override
     public void onBackPressed() {
@@ -98,5 +100,34 @@ public class M1Activity extends AppCompatActivity {
                 startActivity(quizIntent_q1_1);
                 break;
         }
+    }
+
+    public void openMateri1(View view){
+        Intent intentMateri_1 = new Intent(this, M1Content.class);
+        startActivity(intentMateri_1);
+    }
+
+    //PDF Code
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem items) {
+        switch (items.getItemId()) {
+            case R.id.action_info:
+                new AlertDialog.Builder(this)
+                        .setMessage(R.string.intro_message)
+                        .setPositiveButton(android.R.string.ok, null)
+                        .show();
+                return true;
+
+            case android.R.id.home:
+                finish();
+        }
+        return super.onOptionsItemSelected(items);
     }
 }

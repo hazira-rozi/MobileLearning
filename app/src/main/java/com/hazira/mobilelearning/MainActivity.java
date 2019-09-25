@@ -1,6 +1,5 @@
 package com.hazira.mobilelearning;
 
-import android.content.ComponentName;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -102,9 +101,9 @@ public class MainActivity extends AppCompatActivity
                 intent = new Intent(this, M2Activity.class);
                 break;
 
-            case R.id.nav_materi_3:
-                intent = new Intent(this, M3Activity.class);
-                break;
+//            case R.id.nav_materi_3:
+//                intent = new Intent(this, M3Activity.class);
+//                break;
 
 //            case R.id.nav_chat:
 ////                InterfaceManager.shared().a.startLoginActivity(this, false);

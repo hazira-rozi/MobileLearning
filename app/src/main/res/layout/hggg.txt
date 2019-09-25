@@ -1,0 +1,45 @@
+Question q1 = new Question("Program pengolah kata pada microsoft windows adalah....
+", "MS-Excel", "Ms Access", "Ms Word", "Ms Power Point", 3, 1);
+        addQuestion(q1);
+        Question q2 = new Question(" 2 B is Correct", "A", "B", "C", "D", 2,
+                1);
+        addQuestion(q2);
+        Question q3 = new Question("A is Correct", "A", "B", "C", "D", 1,
+                1);
+        addQuestion(q3);
+        Question q4 = new Question("C is Correct", "A", "B", "C", "D", 3,
+                1);
+        addQuestion(q4);
+        Question q5 = new Question("D is also Correct", "A", "B", "C", "D", 1,
+                1);
+        addQuestion(q5);
+        Question q6 = new Question("A is Correct 6", "A", "B", "C", "D", 1,
+                1);
+        addQuestion(q6);
+        Question q7 = new Question(" 2 B is Correct7", "A", "B", "C", "D", 2,
+                1);
+        addQuestion(q7);
+        Question q8 = new Question("C is Correct 8", "A", "B", "C", "D", 3,
+                1);
+        addQuestion(q8);
+        Question q9 = new Question("D is Correct", "A", "B", "C", "D", 4,
+                1);
+        addQuestion(q9);
+        Question q10 = new Question("A is 10 Correct", "A", "B", "C", "D", 1,
+                1);
+        addQuestion(q10);
+        Question q11 = new Question("2 B 11 is Correct", "A", "B", "C", "D", 2,
+                1);
+        addQuestion(q11);
+        Question q12 = new Question("C 12 is Correct", "A", "B", "C", "D", 3,
+                1);
+        addQuestion(q12);
+        Question q13 = new Question("A 14 is Correct", "A", "B", "C", "D", 1,
+                1);
+        addQuestion(q13);
+        Question q14 = new Question("2 B is Correct", "A", "B", "C", "D", 2,
+                1);
+        addQuestion(q14);
+        Question q15 = new Question("2 B is Correct", "A", "B", "C", "D", 2,
+                1);
+        addQuestion(q15);

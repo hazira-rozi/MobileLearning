@@ -10,10 +10,10 @@ import android.view.ViewGroup;
 
 public class M2Fragment extends Fragment {
 
-    @Nullable
-    @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+  @Nullable
+  @Override
+  public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 //        ((M2Activity) getActivity()).setActionBarTitle(" Materi 2 - Home");
-        return inflater.inflate(R.layout.fragment_materi2, container, false);
-    }
+    return inflater.inflate(R.layout.fragment_materi2, container, false);
+  }
 }

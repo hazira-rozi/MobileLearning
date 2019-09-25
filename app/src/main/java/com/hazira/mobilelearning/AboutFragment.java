@@ -10,11 +10,11 @@ import android.view.ViewGroup;
 
 public class AboutFragment extends Fragment {
 
-    @Nullable
-    @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+  @Nullable
+  @Override
+  public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 //        ((MainActivity) getActivity()).setActionBarTitle(" About");
 
-        return inflater.inflate(R.layout.fragment_about, container, false);
-    }
+    return inflater.inflate(R.layout.fragment_about, container, false);
+  }
 }

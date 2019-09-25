@@ -53,10 +53,10 @@ public class M1Q1Activity extends AppCompatActivity {
         textViewScore = findViewById(R.id.textViewScoreM1Q1);
         textViewQuestionCount = findViewById(R.id.textViewQuestionCountM1Q1);
 
-        int value= 2;
+        int value= 1;
         Bundle bundle = getIntent().getExtras();
         if(bundle != null){
-            value = bundle.getInt("quizKDID", 2);
+            value = bundle.getInt("quizKDID", 0);
         }
 
         rbGroup = findViewById(R.id.radio_group_m1q1);
@@ -69,7 +69,7 @@ public class M1Q1Activity extends AppCompatActivity {
 //        Toast.makeText(this, String.valueOf(quizKDID), Toast.LENGTH_SHORT);
         if (savedInstanceState == null) {
             QuizDbHelper dbHelper = new QuizDbHelper(this);
-            questionList = dbHelper.getQuestions(value);
+            questionList = dbHelper.getAllQuestions();
             questionCountTotal = questionList.size();
             Collections.shuffle(questionList);
 

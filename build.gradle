@@ -6,6 +6,7 @@ buildscript {
         google()
         jcenter()
     }
+
     dependencies {
         classpath 'com.android.tools.build:gradle:3.5.0'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
@@ -21,7 +22,7 @@ allprojects {
         google()
         jcenter()
 
-        maven { url "http://dl.bintray.com/chat-sdk/chat-sdk-android" }
+//        maven { url "http://dl.bintray.com/chat-sdk/chat-sdk-android" }
         maven { url "https://maven.google.com" }
         maven { url "https://jitpack.io" }
     }

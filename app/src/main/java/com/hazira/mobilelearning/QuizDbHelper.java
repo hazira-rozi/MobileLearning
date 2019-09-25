@@ -14,7 +14,7 @@ import java.util.List;
 public class QuizDbHelper extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME = "QuizDBAwesome.db";
-    private static final int DATABASE_VERSION = 2;
+    private static final int DATABASE_VERSION = 3;
 
 
     private static QuizDbHelper instance;
@@ -68,48 +68,36 @@ public class QuizDbHelper extends SQLiteOpenHelper {
     }
 
     private void fillQuestionsTable() {
-        Question q1 = new Question("A is Correct", "A", "B", "C", "D", 1,
-                1);
+        Question q1 = new Question("Program pengolah kata pada microsoft windows adalah....","MS-Exce","MS-Acces","MS-Word","MS-Power Point",3,1);
         addQuestion(q1);
-        Question q2 = new Question(" 2 B is Correct", "A", "B", "C", "D", 2,
-                1);
+        Question q2 = new Question("Untuk membuka program Microsoft Office dengan menu shortcut secara cepat maka digunakan alat bantu ?","Keyboard","Mouse","Disket","Monitor",1,1);
         addQuestion(q2);
-        Question q3 = new Question("A is Correct", "A", "B", "C", "D", 1,
-                1);
+        Question q3 = new Question("Berikut ini manakah yang bukan merupakan program Microsoft Office","MS-Exce","MS-Acces","MS-Word","Corel Draw",4,1);
         addQuestion(q3);
-        Question q4 = new Question("C is Correct", "A", "B", "C", "D", 3,
-                3);
+        Question q4 = new Question("Shortcut untuk untuk mengatur paragraf agar berada ditengah dokumen adalah?","Ctrl+D","Ctrl+E","Ctrl+F","Ctrl+G",2,1);
         addQuestion(q4);
-        Question q5 = new Question("D is also Correct", "A", "B", "C", "D", 1,
-                4);
+        Question q5 = new Question("Fitur yang digunakan untuk mengatur tata letak dokumen adalah?","Page Layout","Page Size","Paper Size","Document layout",1,1);
         addQuestion(q5);
-        Question q6 = new Question("A is Correct 6", "A", "B", "C", "D", 1,
-                2);
+        Question q6 = new Question("Untuk mengatur jarak pengetikan dari pinggir kertas digunakan?","Gutter","Margins","Paper Hang","Typing Area",2,1);
         addQuestion(q6);
-        Question q7 = new Question(" 2 B is Correct7", "A", "B", "C", "D", 2,
-                3);
+        Question q7 = new Question("Fitur untuk menebalkan huruf adalah","Underline","Italic","Strikethrough","Bold",4,1);
         addQuestion(q7);
-        Question q8 = new Question("C is Correct 8", "A", "B", "C", "D", 3,
-                1);
+        Question q8 = new Question("Fitur yang berhubungan dengan huruf adalah","Page Layout","Typeface","Font","Margins",3,1);
         addQuestion(q8);
-        Question q9 = new Question("D is Correct", "A", "B", "C", "D", 4,
-                4);
+        Question q9 = new Question("Shortcut untuk untuk memberi garis miring pada tulisan adalah","Ctrl+U","Ctrl+B","Ctrl+I","Ctrl+G",1,1);
         addQuestion(q9);
-        Question q10 = new Question("A is 10 Correct", "A", "B", "C", "D", 1,
-                1);
+        Question q10 = new Question("Pengaturan paragraf rata kiri digunakan","Align Center","Align Right","Align Right","Justify",2,1);
         addQuestion(q10);
-        Question q11 = new Question("2 B 11 is Correct", "A", "B", "C", "D", 2,
-                2);
+        Question q11 = new Question("Untuk merinci uraian yang berurutan digunakan?","Bullet","Numbering","Bullet and Numbering","Icon",2,1);
         addQuestion(q11);
-        Question q12 = new Question("C 12 is Correct", "A", "B", "C", "D", 3,
-                3);
+        Question q12 = new Question("Untuk mencari kata atau kalimat maka digunakan","Replace","Search","Explore","Find",4,1);
         addQuestion(q12);
-        Question q13 = new Question("A 14 is Correct", "A", "B", "C", "D", 1,
-               4);
+        Question q13 = new Question("Untuk mengganti kata atau kalimat digunakan fitur","Replace","Find and Replace","Replace","Override",2,1);
         addQuestion(q13);
-        Question q14 = new Question("2 B is Correct", "A", "B", "C", "D", 2,
-                1);
+        Question q14 = new Question("Fitur yang digunakan agar tulisan menjorok adalah","Hanging","Tab","Indentasi","Text Delay",3,1);
         addQuestion(q14);
+        Question q15 = new Question("Mengatur agar paragraf menjorok ke kanan digunakan","Hanging Right","Tab Right","Right Indent","Delay Right",3,1);
+        addQuestion(q15);
     }
 
     private void addQuestion(Question question) {
@@ -159,7 +147,7 @@ public class QuizDbHelper extends SQLiteOpenHelper {
         String[] selectionArgs = new String[]{qKDId};
 
         Cursor c = db.rawQuery("SELECT * FROM " + QuestionsTable.TABLE_NAME+
-            " WHERE " + QuestionsTable.COLUMN_KD_QUIZ + " = ?", selectionArgs);
+                " WHERE " + QuestionsTable.COLUMN_KD_QUIZ + " = ?", selectionArgs);
 
         if (c.moveToFirst()) {
             do {
