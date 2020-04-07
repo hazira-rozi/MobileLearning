@@ -2,17 +2,17 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#592fc4</color>
+    <color name="colorAccent">#73E1D0</color>
     <color name="darkGrey">#484446</color>
-    <color name="superLightGrey">#d3d4df</color>
-    <color name="lightGrey">#9b9a9a</color>
+    <color name="superLightGrey">#D3D4DF</color>
+    <color name="lightGrey">#9B9A9A</color>
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
     <color name="red">#ff0000</color>
     <color name="green">#00ff00</color>
     <color name="maroon">#8b352a</color>
-    <color name="cyan">#0b8ae6</color>
-    <color name="console_green">#00c401</color>
+    <color name="cyan">#0B8AE6</color>
+    <color name="console_green">#00C401</color>
     <color name="blue">#0000ff</color>
     <color name="yellow">#f2ff00</color>
     <color name="magenta">#ff00cc</color>

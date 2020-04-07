@@ -13,11 +13,21 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".YoutubePlayerActivity"
+            android:parentActivityName=".M1Content"/>
+        <activity
+            android:name=".VideoActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ContentActivity" />
         <activity
             android:name=".M1Content"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".M2Content"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".M3Content"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -33,11 +43,20 @@
         <activity
             android:name=".M2Activity"
             android:theme="@style/AppTheme.NoActionBar" />
-
+        <activity
+            android:name=".M3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".M1Q1Activity" />
         <activity
             android:name=".Quiz1Activity"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Quiz2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

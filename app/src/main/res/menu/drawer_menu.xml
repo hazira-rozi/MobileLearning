@@ -9,25 +9,27 @@
         <item
                 android:id="@+id/nav_home"
                 android:icon="@drawable/ic_home_black_24dp"
+            android:fontFamily="@font/quicksand_medium"
                 android:title="@string/menuHome" />
-    </group>
-    <group
-            android:id="@+id/menuDrawerGroup"
-            android:checkableBehavior="single">
         <item
-                android:icon="@drawable/ic_book_black_24dp"
-                android:title="@string/menuDaftarMateri">
-            <menu>
-                <item
-                        android:id="@+id/nav_materi_1"
-                        android:icon="@drawable/ic_book_black_24dp"
-                        android:title="@string/menuPengolahKata" />
-                <item
-                        android:id="@+id/nav_materi_2"
-                        android:icon="@drawable/ic_book_black_24dp"
-                        android:title="@string/menuPengolahAngka" />
-
-            </menu>
-        </item>
+            android:id="@+id/navVideo"
+            android:icon="@drawable/ic_video_library_black_24dp"
+            android:fontFamily="@font/quicksand_medium"
+            android:title="@string/menuVideo" />
     </group>
+<!--    <group-->
+<!--            android:id="@+id/menuDrawerGroup"-->
+<!--            android:checkableBehavior="single">-->
+<!--        <item-->
+<!--                android:icon="@drawable/ic_book_black_24dp"-->
+<!--                android:title="@string/menuDaftarMateri">-->
+<!--            <menu>-->
+<!--                <item-->
+<!--                    android:id="@+id/navVideo"-->
+<!--                    android:icon="@drawable/ic_home_black_24dp"-->
+<!--                    android:fontFamily="@font/quicksand_medium"-->
+<!--                    android:title="@string/menuHome" />-->
+<!--            </menu>-->
+<!--        </item>-->
+<!--    </group>-->
 </menu>

@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<LinearLayout android:theme="@style/ThemeOverlay.AppCompat.Dark"
-    android:padding="16dp"
-    android:orientation="vertical"
-    android:gravity="bottom"
-    android:background="@color/colorAccent"
-    android:layout_height="80dp"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:layout_height="80dp"
+    android:background="@color/colorAccent"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
-    <TextView android:layout_height="wrap_content"
+    <TextView
         android:layout_width="wrap_content"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
         android:text="Main Menu"
-        android:paddingTop="8dp"/>
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
 </LinearLayout>

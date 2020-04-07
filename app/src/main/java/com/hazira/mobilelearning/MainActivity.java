@@ -3,6 +3,7 @@ package com.hazira.mobilelearning;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -67,9 +68,9 @@ public class MainActivity extends AppCompatActivity
                             selectedFragment = new HelpFragment();
                             title = R.string.titleHelp;
                             break;
-                        case R.id.source:
-                            selectedFragment = new MoreFragment();
-                            title = R.string.titleMore;
+                        case R.id.bottomvideo:
+                            selectedFragment = new VideoListFragment();
+                            title = R.string.menuVideo;
                             break;
                     }
 
@@ -99,6 +100,10 @@ public class MainActivity extends AppCompatActivity
 
             case R.id.nav_materi_2:
                 intent = new Intent(this, M2Activity.class);
+                break;
+
+            case R.id.nav_materi_3:
+                intent = new Intent(this, M3Activity.class);
                 break;
 
 //            case R.id.nav_materi_3:
@@ -137,5 +142,87 @@ public class MainActivity extends AppCompatActivity
             super.onBackPressed();
         }
     }
+
+    //PDF Code Here (call the pdfContent)
+    public void openMateri1(View view) {
+        String materi = "bab1.pdf";
+        String title = "Pendahuluan";
+        String vid = "2TSirk50mqo";
+        switch (view.getId()) {
+            case R.id.buttonsimdig:
+                materi = "bab1.pdf";
+                title = "Pendahuluan";
+                vid = "2TSirk50mqo";
+                break;
+            case R.id.buttoninfo:
+                materi = "bab2.pdf";
+                title = "Perolehan Informasi";
+                vid = "2TSirk50mqo";
+                break;
+            case R.id.buttonmind:
+                materi = "mind.pdf";
+                title = "Peta Minda";
+                vid = "2TSirk50mqo";
+                break;
+            case R.id.buttoninfo2:
+                materi = "bab3.pdf";
+                title = "Pengelolaan Informasi";
+                vid = "2TSirk50mqo";
+                break;
+            case R.id.buttonparagraf:
+                materi = "paragraph.pdf";
+                title = "Pengenalan Paragraf";
+                vid = "2TSirk50mqo";
+                break;
+            case R.id.buttonword:
+                materi = "word.pdf";
+                title = "Pengolah Kata";
+                vid="2TSirk50mqo";
+                break;
+            case R.id.buttonexcel:
+                materi = "excel.pdf";
+                title = "Pengolah Angka";
+                vid = "2TSirk50mqo";
+                break;
+            case R.id.buttonpowerpoint:
+                materi = "ppt.pdf";
+                title = "Aplikasi Presentasi";
+                vid = "2TSirk50mqo";
+                break;
+            case R.id.buttonpresentasi:
+                materi = "teknikppt.pdf";
+                title = "Teknik Presentasi";
+                vid = "2TSirk50mqo";
+                break;
+            case R.id.buttonebook:
+                materi = "ebook.pdf";
+                title = "Naskah Digital";
+                vid = "2TSirk50mqo";
+                break;
+            case R.id.buttonkikd:
+                materi = "kikd.pdf";
+                title = "KI - KD ";
+                vid="2TSirk50mqo";
+                break;
+            case R.id.buttonsilabus:
+                materi = "silabus.pdf";
+                title = "Silabus";
+                vid="2TSirk50mqo";
+                break;
+            case R.id.buttonrpp:
+                materi = "rpp.pdf";
+                title = "Rencana Pembelajaran";
+                vid="2TSirk50mqo";
+                break;
+        }
+        Intent intentMateri_1 = new Intent(this, M1Content.class);
+        intentMateri_1.putExtra("file", materi).putExtra("headTitle", title).putExtra("videoLink",vid);
+        startActivity(intentMateri_1);
+    }
+
+    //End of PDF Code
+
+
+    //
 }
 

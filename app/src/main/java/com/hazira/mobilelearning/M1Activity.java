@@ -61,14 +61,14 @@ public class M1Activity extends AppCompatActivity {
                             selectedFragment = new M1Fragment();
                             title = R.string.titleMateri1;
                             break;
-                        case R.id.langkah_1:
-                            selectedFragment = new M1LangkahFragment();
-                            title = R.string.titleMateriLangkah;
-                            break;
-                        case R.id.latihan_1:
-                            selectedFragment = new M1LatihanFragment();
-                            title = R.string.titleMateriLatihan;
-                            break;
+//                        case R.id.langkah_1:
+//                            selectedFragment = new M1LangkahFragment();
+//                            title = R.string.titleMateriLangkah;
+//                            break;
+//                        case R.id.latihan_1:
+//                            selectedFragment = new M1LatihanFragment();
+//                            title = R.string.titleMateriLatihan;
+//                            break;
                         case R.id.evaluasi_1:
                             selectedFragment = new M1EvaluasiFragment();
                             title = R.string.titleMateriEvaluas;
@@ -103,7 +103,47 @@ public class M1Activity extends AppCompatActivity {
     }
 
     public void openMateri1(View view){
+        String materi = "bab1.pdf";
+        switch (view.getId()) {
+            case R.id.buttonsimdig:
+                materi = "bab1.pdf";
+                break;
+            case R.id.buttoninfo:
+                materi = "bab2.pdf";
+                break;
+            case R.id.buttonmind:
+                materi = "mind.pdf";
+                break;
+            case R.id.buttoninfo2:
+                materi = "bab3.pdf";
+                break;
+            case R.id.buttonword:
+                materi = "word.pdf";
+                break;
+            case R.id.buttonexcel:
+                materi = "excel.pdf";
+                break;
+            case R.id.buttonpowerpoint:
+                materi = "ppt.pdf";
+                break;
+            case R.id.buttonpresentasi:
+                materi = "teknikppt.pdf";
+                break;
+            case R.id.buttonebook:
+                materi = "bab3ebook.pdf";
+                break;
+            case R.id.buttonkikd:
+                materi = "kikd.pdf";
+                break;
+            case R.id.buttonsilabus:
+                materi = "silabus.pdf";
+                break;
+            case R.id.buttonrpp:
+                materi = "rpp.pdf";
+                break;
+        }
         Intent intentMateri_1 = new Intent(this, M1Content.class);
+        intentMateri_1.putExtra("file",materi);
         startActivity(intentMateri_1);
     }
 

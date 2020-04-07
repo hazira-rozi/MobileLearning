@@ -40,7 +40,6 @@ public class M1Q1Activity extends AppCompatActivity {
 
     private int score;
     private boolean answered;
-
     private long backPressedTIme;
 
 
@@ -53,12 +52,16 @@ public class M1Q1Activity extends AppCompatActivity {
         textViewScore = findViewById(R.id.textViewScoreM1Q1);
         textViewQuestionCount = findViewById(R.id.textViewQuestionCountM1Q1);
 
-        int value= 1;
+       int value=0;
         Bundle bundle = getIntent().getExtras();
         if(bundle != null){
             value = bundle.getInt("quizKDID", 0);
+            Toast.makeText(this,"Empty",Toast.LENGTH_SHORT);
         }
-
+        else{
+            Toast.makeText(this,"Empty",Toast.LENGTH_SHORT);
+        }
+//082287653815
         rbGroup = findViewById(R.id.radio_group_m1q1);
         rb1 = findViewById(R.id.radio_button1_m1q1);
         rb2 = findViewById(R.id.radio_button2_m1q1);
@@ -69,7 +72,8 @@ public class M1Q1Activity extends AppCompatActivity {
 //        Toast.makeText(this, String.valueOf(quizKDID), Toast.LENGTH_SHORT);
         if (savedInstanceState == null) {
             QuizDbHelper dbHelper = new QuizDbHelper(this);
-            questionList = dbHelper.getAllQuestions();
+//            questionList = dbHelper.getAllQuestions();
+            questionList = dbHelper.getQuestions(value); /* get question categroy 1*/
             questionCountTotal = questionList.size();
             Collections.shuffle(questionList);
 
@@ -100,7 +104,6 @@ public class M1Q1Activity extends AppCompatActivity {
         });
     }
 
-
     private void checkAnswer() {
         answered = true;
 
@@ -110,6 +113,7 @@ public class M1Q1Activity extends AppCompatActivity {
         if (answerNr == currentQuestion.getAnswerNr()) {
             score++;
             textViewScore.setText("Score: " + score);
+
         }
 
         showSolution();
@@ -124,19 +128,19 @@ public class M1Q1Activity extends AppCompatActivity {
         switch (currentQuestion.getAnswerNr()) {
             case 1:
                 rb1.setTextColor(Color.GREEN);
-                textViewQuestion.setText("Pilihan A Benar");
+                textViewQuestion.setText("Jawaban Benar: A");
                 break;
             case 2:
                 rb2.setTextColor(Color.GREEN);
-                textViewQuestion.setText("Pilihan B Benar");
+                textViewQuestion.setText("Jawaban Benar: B");
                 break;
             case 3:
                 rb3.setTextColor(Color.GREEN);
-                textViewQuestion.setText("Pilihan C Benar");
+                textViewQuestion.setText("Jawaban Benar: C");
                 break;
             case 4:
                 rb4.setTextColor(Color.GREEN);
-                textViewQuestion.setText("Pilihan D Benar");
+                textViewQuestion.setText("Jawaban Benar: D ");
                 break;
         }
 
@@ -191,7 +195,6 @@ public class M1Q1Activity extends AppCompatActivity {
 
     protected void onDestroy() {
         super.onDestroy();
-
     }
 
     @Override

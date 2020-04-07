@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/containerPDF2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".M2Content">
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfViewExcel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/pdfNavContainer2"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+
+    </com.github.barteksc.pdfviewer.PDFView>
+
+    <LinearLayout
+        android:id="@+id/pdfNavContainer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/prevBtnExcel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight=".25"
+            android:onClick="prevPage"
+            android:text="Prev" />
+
+        <Button
+            android:id="@+id/nextBtnExcel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:onClick="nextPage"
+            android:text="Next" />
+
+        <Button
+            android:id="@+id/zoomOBtnExcel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:onClick="zoomOut"
+            android:text="Zoom out" />
+
+        <Button
+            android:id="@+id/zoomIBtnExcel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:onClick="zoomIn"
+            android:text="Zoom in" />
+
+    </LinearLayout>
+
+</RelativeLayout>

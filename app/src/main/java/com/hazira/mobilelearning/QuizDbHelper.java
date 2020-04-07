@@ -14,7 +14,7 @@ import java.util.List;
 public class QuizDbHelper extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME = "QuizDBAwesome.db";
-    private static final int DATABASE_VERSION = 3;
+    private static final int DATABASE_VERSION = 4;
 
 
     private static QuizDbHelper instance;
@@ -92,11 +92,11 @@ public class QuizDbHelper extends SQLiteOpenHelper {
         addQuestion(q11);
         Question q12 = new Question("Untuk mencari kata atau kalimat maka digunakan","Replace","Search","Explore","Find",4,1);
         addQuestion(q12);
-        Question q13 = new Question("Untuk mengganti kata atau kalimat digunakan fitur","Replace","Find and Replace","Replace","Override",2,1);
+        Question q13 = new Question("Untuk mengganti kata atau kalimat digunakan fitur","Replace","Find and Replace","Replace","Override",2,2);
         addQuestion(q13);
-        Question q14 = new Question("Fitur yang digunakan agar tulisan menjorok adalah","Hanging","Tab","Indentasi","Text Delay",3,1);
+        Question q14 = new Question("Fitur yang digunakan agar tulisan menjorok adalah","Hanging","Tab","Indentasi","Text Delay",3,2);
         addQuestion(q14);
-        Question q15 = new Question("Mengatur agar paragraf menjorok ke kanan digunakan","Hanging Right","Tab Right","Right Indent","Delay Right",3,1);
+        Question q15 = new Question("Mengatur agar paragraf menjorok ke kanan digunakan","Hanging Right","Tab Right","Right Indent","Delay Right",3,2);
         addQuestion(q15);
     }
 

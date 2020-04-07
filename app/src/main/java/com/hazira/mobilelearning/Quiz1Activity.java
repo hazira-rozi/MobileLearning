@@ -42,7 +42,7 @@ public class Quiz1Activity extends AppCompatActivity {
 	private void startQuiz() {
 
 		String quizKDName = "Materi 1 - Quiz 1";
-		int value = 2;
+		int value = 1;
 		Intent intent = new Intent(Quiz1Activity.this, M1Q1Activity.class);
 		intent.putExtra("quizKDID",value);
 		startActivityForResult(intent, REQUEST_CODE_QUIZ);

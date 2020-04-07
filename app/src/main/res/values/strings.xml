@@ -13,18 +13,35 @@
             \n \n
 
     </string>
+    <string name="welcome">
+        Selamat Datang
+        \n \n Aplikasi ini adalah aplikasi pendukung pembelajaran Simulasi dan Komunikasi Digital di SMKN 1 Singkarak.
+       
+    </string>
     //Materi
     <string name="word_preface">
         Salah satu kegiatan mengelola informasi digital adalah menulis/membuat/menyusun naskah digital menggunakan aplikasi pengolah kata. Pada media ini, digunakan perangkat lunak Microsoft Word 2013.
     </string>
 
+    <!-- Misc-->
+    <string name="emailhelp">Untuk bantuan silahkan hubungi: \n hazirafakhrurrozi@gmail.com</string>
+    <string name="about">Seluruh materi disadur dari Bahan Ajar Simulasi dan Komunikasi Digital Terbitan Kementrian Pendidikan Kebudayaan</string>
+
     <string name="titleHome">Home</string>
     <string name="titleAbout">About</string>
     <string name="titleHelp">Help</string>
     <string name="titleMore">More</string>
-    <string name="titleMateri1">Perangkat Lunak Pengolah Kata - Home</string>
-    <string name="titleMateri2">Perangkat Lunak Pengolah Angka</string>
-    <string name="titleMateri3">Perangkat Lunak Pengolah Angka</string>
+    <string name="titleMateri1">Simulasi dan Komunikasi Digital</string>
+    <string name="titleMateri2">Logika dan Algoritma</string>
+    <string name="titleMateri3">Pengelolaan Informasi</string>
+    <string name="titleMateri2_1">Penggalian Informasi</string>
+    <string name="titleMateri2_2">Peta Minda</string>
+    <string name="titleMateri3_1_1">Paragraf</string>
+    <string name="titleMateri3_1">Perangkat Lunak Pengolah Kata</string>
+    <string name="titleMateri3_2">Perangkat Lunak Pengolah Angka</string>
+    <string name="titleMateri3_3">Perangkat Lunak Presentasi</string>
+    <string name="titleMateri3_4">Teknik Presentasi</string>
+    <string name="titleMateri3_5">Ebook</string>
     <string name="titleMateriLangkah">Langkah Kerja</string>
     <string name="titleMateriLatihan">Latihan</string>
     <string name="titleMateriEvaluas">Evaluasi</string>
@@ -32,8 +49,14 @@
     <string name="menuPengolahAngka">Materi 2 - Pengolah Angka</string>
     <string name="menuPresentasi">Perangkat Lunak Presentasi</string>
     <string name="menuDaftarMateri">Daftar Materi</string>
+    <string name="menuPerangkat">Perangkat Pembelajaran</string>
+    <string name="menuKIKD">KI-KD Pembelajaran</string>
+    <string name="menuSilabus">Silabus Pembelajaran</string>
+    <string name="menuRPP">Rencana Pembelajaran</string>
     <string name="menuHome">Beranda</string>
     <string name="buttonQuiz">Mulai Latihan</string>
+    <string name="menuVideo">Video</string>
+    <string name="daftarVideo">Daftar Video</string>
 
     //TableLayouts
     <string name="tabHeaderFitur">Nama Fitur</string>
