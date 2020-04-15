@@ -13,8 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".YoutubePlayerActivity"
-            android:parentActivityName=".M1Content"/>
+        <activity
+            android:name=".YoutubePlayerActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"/>
         <activity
             android:name=".VideoActivity"
             android:theme="@style/AppTheme.NoActionBar" />

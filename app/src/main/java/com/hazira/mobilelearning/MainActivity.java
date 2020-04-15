@@ -222,7 +222,22 @@ public class MainActivity extends AppCompatActivity
 
     //End of PDF Code
 
+    public void PlayYTVideo(View view) {
 
+        String vid = "q1IBDIEUl6I";
+        String vidTitle = "Daftar Isi Otomatis";
+
+        switch (view.getId()){
+            case R.id.buttonVideoTOC:
+                vid = "q1IBDIEUl6I";
+                vidTitle = "Daftar Isi Otomatis";
+                break;
+        }
+
+        Intent intentVideo = new Intent(this, YoutubePlayerActivity.class);
+        intentVideo.putExtra("videoURI", vid).putExtra("videoTitle",vidTitle);
+        startActivity(intentVideo);
+    }
     //
 }
 

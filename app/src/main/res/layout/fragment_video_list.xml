@@ -20,7 +20,7 @@
             android:layout_marginTop="64dp"
             android:layout_marginEnd="8dp"
             android:fontFamily="@font/quicksand_medium"
-            android:text="@string/menuVideo"
+            android:text="@string/TOCvidtutor"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textSize="30sp"
@@ -30,15 +30,15 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/buttonVideo1_1"
+            android:id="@+id/buttonVideoTOC"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:backgroundTint="@color/design_default_color_background"
-            android:drawableTop="@drawable/word"
+            android:drawableTop="@drawable/wordplay"
             android:fontFamily="@font/quicksand_medium"
-            android:onClick="openVideo"
-            android:text="@string/titleMateri3_2"
+            android:onClick="PlayYTVideo"
+            android:text="@string/TOCvid"
             android:textAlignment="inherit"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textSize="18sp"

@@ -3,7 +3,13 @@ package com.hazira.mobilelearning;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatCallback;
+import androidx.appcompat.view.ActionMode;
+import androidx.appcompat.widget.Toolbar;
 
 import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton;
 import com.google.android.youtube.player.YouTubeBaseActivity;
@@ -16,30 +22,33 @@ public class YoutubePlayerActivity extends YouTubeBaseActivity {
 
     YouTubePlayerView youTubePlayerView;
     YouTubePlayer.OnInitializedListener onInitializedListener;
-    YouTubePlayer.OnFullscreenListener onFullscreenListener;
+//    YouTubePlayer.OnFullscreenListener onFullscreenListener;
 
     TextView tv;
-    ExtendedFloatingActionButton fabPlay;
-    ExtendedFloatingActionButton backToLesson;
+//    ExtendedFloatingActionButton fabPlay;
+//    ExtendedFloatingActionButton backToLesson;
 
+
+
+    // add the Toolbar
+//    Toolbar toolbarvid= (Toolbar) findViewById(R.id.toolbarytPlayer);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_youtube_player);
 
+        Button bPlay = (Button) findViewById(R.id.buttonPlayYT);
         Intent intents = getIntent();
         String vidLink = intents.getExtras().getString("videoURI", "fsdsd");
         String vidTitle = intents.getExtras().getString("videoTitle", "something wrong");
-//        Toolbar toolbar = findViewById(R.id.toolbarYt);
-//        setSupportActionBar(toolbar);
-//        tv = (TextView) findViewById(R.id.id_video_play_text);
-//
-//        fabPlay = (ExtendedFloatingActionButton) findViewById(R.id.fabVideo);
-//        backToLesson = (ExtendedFloatingActionButton) findViewById(R.id.fabBackLesson);
+//        Toolbar toolbar = findViewById(R.id.toolbarytPlayer);
+////        setSupportActionBar(toolbar);
+        tv = (TextView) findViewById(R.id.video_play_text);
+
         youTubePlayerView = (YouTubePlayerView) findViewById(R.id.playerYT);
 
-//        tv.setText(vidTitle);
+        tv.setText(vidTitle);
 
         onInitializedListener = new YouTubePlayer.OnInitializedListener() {
             @Override
@@ -60,12 +69,13 @@ public class YoutubePlayerActivity extends YouTubeBaseActivity {
 
 
 
-//        fabPlay.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                youTubePlayerView.initialize(PlayerConfig.API_KEY, onInitializedListener);
-//            }
-//        });
+
+        bPlay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                youTubePlayerView.initialize(PlayerConfig.API_KEY, onInitializedListener);
+            }
+        });
 //
 //        backToLesson.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -74,6 +84,8 @@ public class YoutubePlayerActivity extends YouTubeBaseActivity {
 //            }
 //        });
     }
+
+
 
 //    public void backToLesson(){
 //        finish();

@@ -58,6 +58,10 @@
     <string name="menuVideo">Video</string>
     <string name="daftarVideo">Daftar Video</string>
 
+    //Video
+    <string name="TOCvid">Membuat Daftar Isi Otomatis</string>
+    <string name="TOCvidtutor">Video Tutorial</string>
+
     //TableLayouts
     <string name="tabHeaderFitur">Nama Fitur</string>
     <string name="tabHeaderFungsi">Fungsi</string>

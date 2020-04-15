@@ -11,7 +11,7 @@
     <item
         android:id="@+id/bottomvideo"
         android:icon="@drawable/ic_video_library_black_24dp"
-        android:title="Offline Video" />
+        android:title="@string/TOCvidtutor" />
 <!--    <item-->
 <!--        android:id="@+id/evaluasi"-->
 <!--        android:icon="@drawable/ic_spellcheck_black_24dp"-->
